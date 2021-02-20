@@ -10,10 +10,13 @@ public class HelloHello implements CommandLineRunner {
 
     private NameSurname nameSurname;
     private final PhoneNumber phoneNumber;
+    private final CountString countString;
 
-    public HelloHello(PhoneNumber phoneNumber) {
+    public HelloHello(PhoneNumber phoneNumber, CountString countString) {
         this.phoneNumber = phoneNumber;
+        this.countString = countString;
     }
+
     @Autowired
     public void setNameSurname(NameSurname nameSurname) {
         this.nameSurname = nameSurname;
@@ -24,5 +27,7 @@ public class HelloHello implements CommandLineRunner {
         System.out.println("This is the real HELLO! " +
                 nameSurname.run(" ") +
                 phoneNumber.run(" "));
+
+        System.out.println(countString.garums("jjkljaslkdjalskdhaldhlauihlkjhasd"));
     }
 }
