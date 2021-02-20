@@ -28,6 +28,6 @@ public class HelloHello implements CommandLineRunner {
                 nameSurname.run(" ") +
                 phoneNumber.run(" "));
 
-        System.out.println(countString.garums("jjkljaslkdjalskdhaldhlauihlkjhasd"));
+        System.out.println(countString.garums("Not an easy exercise but somehow works fine."));
     }
 }
